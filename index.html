@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globo Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Globo Gym Annual Survey</h1>
+    <p id="description">We're better than you... and we know it</p>
+    <div class="header-pic">
+        <img src="./img/white-goodman.jpg" alt="white-goodman">
+    </div>
+   
+    <form id="survey-form">
+        <div class="form-control">
+            <!-- Name Input -->
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+        </div>
+        <div class="form-control">
+            <!-- Email Input -->
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="form-control">
+            <!-- Age Input -->
+            <label for="age" id="number-label">Age (optional)</label>
+            <input type="number" id="number" min="1" max="100" placeholder="Enter Your Age">
+        </div>
+        <!-- Dropdown Menu -->
+        <div class="form-control">
+            <label for="frequency">How many times a week do you workout?</label>
+            <select name="frequency" id="dropdown">
+                <option value="once a week">Once a week</option>
+                <option value="twice a week">Twice a week</option>
+                <option value="three times a week">Three times a week</option>
+                <option value="four times a week">Four times a week</option>
+            </select>
+        </div>
+        <!-- Radio Buttons -->
+        <div class="form-control">
+            <label for="recommendation">Would you recommend Globo Gym?</label>
+            <label for="recommend1"><input type="radio" id="recommend1" name="recommend" value="definently">Definently</label>
+            <label for="recommend1"><input type="radio" id="recommend2" name="recommend" value="maybe">Maybe</label>
+            <label for="recommend1"><input type="radio" id="recommend3" name="recommend" value="not a chance">Not a chance</label>
+        </div>
+        <!-- Checkboxes -->
+        <div class="form-control">
+            <label for="improvements">What would you like to see improved?<small> (Check all that apply)</small></label>
+            <label for="improve1"><input type="checkbox" id="improve1" name="improve" value="lockeroom">Locker Rooms</label>
+            <label for="improve2"><input type="checkbox" id="improve2" name="improve" value="lobby">Lobby</label>
+            <label for="improve3"><input type="checkbox" id="improve3" name="improve"value="cardio">Cardio Equipment</label>
+            <label for="improve4"><input type="checkbox" id="improve4" name="improve"value="freeweights">Free Weights</label>
+            <label for="improve5"><input type="checkbox" id="improve5" name="improve"value="weightmachines">Weight Machines</label>
+            <label for="improve6"><input type="checkbox" id="improve6" name="improve" value="pool">Pool</label>
+        </div>
+        <!-- Text Box -->
+        <div class="form-control">
+            <label for="comments">Additional Comments</label>
+            <textarea name="comments" id="comments">Enter any additional comments here</textarea>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>

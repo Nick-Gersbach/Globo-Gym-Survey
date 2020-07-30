@@ -1,0 +1,127 @@
+/* 
+
+    Colors
+
+    BG Gradient 
+    Light Purple - #3B3F8C
+    Lighter Purple - #585B8C
+
+    Form Background Color
+    Dark Purple - #222340
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(59, 63, 140, .7), rgba(88, 91, 140, .7)), url(./img/gym-form-bg.jpg) no-repeat center center/cover;
+    /* height: 100vh; */
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+p#description {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+.header-pic {
+    text-align: center;
+}
+
+img {
+    width: 90px;
+    border-radius: 50%;
+    margin: 1rem 0 1rem 0;
+}
+
+form {
+    background-color: #222340;
+    border-radius: 7px;
+    opacity: .9;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    margin-bottom: 4rem;
+    -webkit-box-shadow: -1px 0px 13px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 0px 13px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 0px 13px 0px rgba(0,0,0,0.75);
+}
+
+.form-control {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+label {
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* .form-control label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    
+} */
+
+.form-control input, .form-control textarea {
+    display: block;
+    width: 100%;
+    padding: .7rem;
+    border-radius: 6px;
+    border: 2px solid black;
+    font-size: 16px;
+}
+
+.form-control select {
+    padding: 10px;
+    width: 100%;
+    height: 30px 20px;
+    display: block;
+    border-radius: 6px;
+}
+
+
+.form-control label input[type="radio"], .form-control input[type="checkbox"] {
+
+    margin: .5rem .5rem .5rem 0;
+}
+
+.form-control input[type="radio"], .form-control input[type="checkbox"] {
+    width: auto;
+    display: inline-block;  
+}
+
+button {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    background: orange;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #ebc642;
+    transition: ease-in .3s;
+}
+
